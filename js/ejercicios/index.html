@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Ejercicios JavaScript</title>
+  </head>
+  <body>
+    <script>
+      /* Programa una función que cuente el número de de caracteres de una cadena de texto, pe. miFuncion ("Hola mundo") devolvera 10 */
+
+      //Funcion declarada
+      /* function contarCadena(cadena = "") {
+        if (!cadena) {
+          console.warn("No ingresaste una cadena de texto");
+        } else {
+          console.info(
+            `La cadena "${cadena}" tiene ${cadena.length} caracteres.`
+          );
+        }
+      } */
+
+      //Funcion expresada
+      const contarCadena = (cadena = "") =>
+        !cadena
+          ? console.warn("No ingresaste una cadena de texto")
+          : console.info(
+              `La cadena "${cadena}" tiene ${cadena.length} caracteres.`
+            );
+
+      contarCadena("Hola mundo");
+      contarCadena();
+
+      // -----------------------------------------------------------------
+
+      /* Programa una función que te devuelva el texto recortado según el número de caracteres indicados.  */
+    </script>
+  </body>
+</html>
